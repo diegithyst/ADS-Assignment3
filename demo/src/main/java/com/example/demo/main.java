@@ -1,8 +1,11 @@
 package com.example.demo;
 
+import com.example.demo.model.Dijkstra;
 import com.example.demo.model.WeightedGraph;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.util.HashMap;
 
 public class main {
 
@@ -29,6 +32,11 @@ public class main {
         //graph.addEdge('E', 'B', 1);
 
         //run the algorithm that takes this graph as a parameter here
+
+        HashMap<Character, Integer> output = Dijkstra.algorithm(graph,
+            'A');
+
+        System.out.println(output.toString());
     }
 
 }

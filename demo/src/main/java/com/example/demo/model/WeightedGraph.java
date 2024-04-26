@@ -3,6 +3,7 @@ package com.example.demo.model;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
 
 public class WeightedGraph {
     private HashMap<Character, List<Edge>> adjencyMap;
@@ -27,6 +28,16 @@ public class WeightedGraph {
         }else {
             System.out.println("Edge exists!!");
         }
+    }
+
+    public HashMap<Character, List<Edge>> getMap()
+    {
+        return adjencyMap;
+    }
+
+    public int getNodeCount()
+    {
+        return adjencyMap.size();
     }
 
 
