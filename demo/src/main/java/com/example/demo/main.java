@@ -20,7 +20,7 @@ public class main {
         graph.addEdge('B', 'E', 1);
         graph.addEdge('C', 'F', 6);
         graph.addEdge('C', 'G', 12);
-        graph.addEdge('D', 'E', 3);
+        graph.addEdge('E', 'D', 3);
         graph.addEdge('D', 'G', 2);
         graph.addEdge('E', 'G', 8);
         graph.addEdge('E', 'H', 7);
