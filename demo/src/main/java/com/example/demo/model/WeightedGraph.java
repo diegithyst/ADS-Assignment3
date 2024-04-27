@@ -25,6 +25,7 @@ public class WeightedGraph {
         }
         if(!edgeExists(source, destination) && !edgeExists(destination, source)) {
             adjencyMap.get(source).add(new Edge(destination, weight));
+            adjencyMap.get(destination).add(new Edge(source,weight));
         }else {
             System.out.println("Edge exists!!");
         }
